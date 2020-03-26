@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Works4 from "../components/Works4"
 import Product3 from "../components/Product3"
 import "../components/reset.css"
@@ -24,9 +23,5 @@ const FourthPage = () => {
   )
 }
 
-
-FourthPage.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default FourthPage

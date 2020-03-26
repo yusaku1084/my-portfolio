@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from 'react'
 import styled from 'styled-components'
 import output01 from '../images/output01.svg'
@@ -10,14 +11,14 @@ const Works2 = () => (
   <WorksWrapper>
     <Box>
       <WorksContent
-        href="page-2"
+        href="/page-2"
         src={output01}
         alt="実績1"
         site="RIXIS SP"
         cording="design / Sketch"
       />
       <WorksContent
-        href="page-3"
+        href="/page-3"
         src={output02}
         alt="実績2"
         site="袴美人サイト"
@@ -31,14 +32,22 @@ export default Works2
 
 const WorksContent = props => (
   <Content>
-    <Link href={props.href} >
+    <Link2 to={props.href} >
       <WorksImg><img src={props.src} alt={props.alt} width="275" height="275" /></WorksImg>    
       <TextBold>{props.site}</TextBold>
       <Text>{props.cording}</Text>
       <FontAwesomeIcon icon={faAngleLeft} size="2x" />
-    </Link>
+    </Link2>
   </Content>
 )
+
+
+const Link2 = styled(Link)`
+  color: #000;
+  width: 100%;
+  height: 275px;
+  display: block;
+`
 
 
 const WorksWrapper = styled.div`
@@ -62,13 +71,6 @@ const Box = styled.div`
 const Content = styled.div`
   width: 275px;
   text-align: center;
-`
-
-const Link = styled.a`
-  color: #000;
-  width: 100%;
-  height: 275px;
-  display: block;
 `
 
 const WorksImg = styled.div`

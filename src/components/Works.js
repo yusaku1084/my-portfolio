@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from 'react'
 import styled from 'styled-components'
 import output01 from '../images/output01.svg'
@@ -10,21 +11,21 @@ const Works = () => (
   <WorksWrapper>
     <Box>
       <WorksContent
-        href="page-2"
+        href="/page-2"
         src={output01}
         alt="実績①"
         site="RIXIS SPsite"
         cording="design / Sketch"
       />
       <WorksContent
-        href="page-3"
+        href="/page-3"
         src={output02}
         alt="実績②"
         site="袴美人サイト"
         cording="design / Sketch"
       />
       <WorksContent
-        href="page-4"
+        href="/page-4"
         src={output03}
         alt="実績③"
         site="Portfolio"
@@ -38,14 +39,23 @@ export default Works
 
 const WorksContent = props => (
   <Content>
-    <Link href={props.href} >
+    <Link2 to={props.href}>
       <WorksImg><img src={props.src} alt={props.alt} width="275" height="275" /></WorksImg>    
       <TextBold>{props.site}</TextBold>
       <Text>{props.cording}</Text>
       <FontAwesomeIcon icon={faAngleLeft} size="2x" />
-    </Link>
+    </Link2>
   </Content>
 )
+
+
+
+const Link2 = styled(Link)`
+  color: #000;
+  width: 100%;
+  height: 275px;
+  display: block;
+`
 
 
 const WorksWrapper = styled.div`
@@ -69,12 +79,7 @@ const Content = styled.div`
   text-align: center;
 `
 
-const Link = styled.a`
-  color: #000000;
-  width: 100%;
-  height: 275px;
-  display: block;
-`
+
 
 const WorksImg = styled.div`
   width: 100%;
