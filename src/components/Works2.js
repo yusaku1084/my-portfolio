@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from 'react'
 import styled from 'styled-components'
-import output01 from '../images/output01.svg'
+/*import output01 from '../images/output01.svg'*/
 import output02 from '../images/output02.svg'
 import output03 from '../images/output03.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

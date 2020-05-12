@@ -16,11 +16,11 @@ const Back = () => (
 
 export default Back
 
-const Link = styled.a`
+/*const Link = styled.a`
   color: transparent;
   width: 100%;
   display: block;
-`
+`*/
 
 const Controler = styled.div`
   padding-top: 16px;

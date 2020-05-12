@@ -64,7 +64,7 @@ const Icon = styled(FontAwesomeIcon)`
   top: 13px;
 `
 
-const Block = styled.div`
+/*const Block = styled.div`
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
@@ -84,9 +84,9 @@ const TextDetail = styled.div`
 const Text = styled.p`
   font-size: 16px;
   line-height: 28px;
-`
+`*/
 
-const TextBold = styled(Text)`
+/*const TextBold = styled(Text)`
   position: relative;
   font-weight: bold;
   &::before {
@@ -102,9 +102,9 @@ const TextBold = styled(Text)`
     margin: 3px 0;
 
   }
-`
+`*/
 
-const TextBold2 = styled(TextBold)`
+/*const TextBold2 = styled(TextBold)`
 &::before {
   left: -27.2px;
 }
@@ -143,7 +143,7 @@ const SkillComment = styled(SkillText)`
   max-width: 270px;
   font-weight: 500;
   padding-left: 0;
-`
+`*/
 
 const Items = styled.div`
   display:-webkit-box;

@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import output01 from '../images/SP.png'
+/*import output01 from '../images/SP.png'*/
 import ColumnTitle from '../components/ColumnTitle.js'
 import output02 from '../images/HZ.png'
-import output03 from '../images/output03.svg'
+/*import output03 from '../images/output03.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'*/
 
 const Works = () => (
   <WorksWrapper>
@@ -70,25 +70,25 @@ const Content = styled.div`
   height: auto;
 `
 
-const Link = styled.a`
+/*const Link = styled.a`
   color: #000000;
   width: 100%;
   display: block;
-`
+`*/
 
 const WorksImg = styled.div`
   width: 100%;
 `
 
-const Text = styled.p`
+/*const Text = styled.p`
   font-size: 16px;
   line-height: 28px;
   padding-top: 0;
   margin-bottom: 53px;
-`
+`*/
 
-const TextBold = styled(Text)`
+/*const TextBold = styled(Text)`
   font-weight: bold;
   margin-bottom: 10px;
   padding-top: 24px;
-`
+`*/

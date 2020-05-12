@@ -7,7 +7,7 @@ import Header from './header'
 import SubTitle from './SubTitle'
 import Career from './Career'
 import Activity from './Activity'
-import styled from 'styled-components'
+/*import styled from 'styled-components'*/
 import Footer from '../components/Footer'
 
 const Layout = () => {
@@ -32,9 +32,9 @@ const Layout = () => {
   )
 }
 
-const Font = styled.div`
+/*const Font = styled.div`
 font-family: Roboto;
-`
+`*/
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
