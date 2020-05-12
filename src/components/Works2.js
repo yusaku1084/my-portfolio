@@ -2,8 +2,8 @@ import { Link } from "gatsby"
 import React from 'react'
 import styled from 'styled-components'
 /*import output01 from '../images/output01.svg'*/
-import output02 from '../images/output02.svg'
-import output03 from '../images/output03.svg'
+import output02 from '../images/output02.png'
+import output03 from '../images/output03.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 
@@ -33,10 +33,10 @@ export default Works2
 const WorksContent = props => (
   <Content>
     <Link2 to={props.href} >
-      <WorksImg><img src={props.src} alt={props.alt} width="275" height="275" /></WorksImg>    
+      <WorksImg><img src={props.src}/></WorksImg>    
     <TextBold>{props.site}</TextBold>
       <Text>{props.cording}</Text>
-      <FontAwesomeIcon icon={faAngleLeft} size="2x" />
+      <Icon icon={faAngleLeft} size="2x" />
       </Link2>
   </Content>
 )
@@ -50,7 +50,7 @@ const WorksWrapper = styled.div`
 
 
 const Link2 = styled(Link)`
-  color: #000;
+  color: transparent;
   width: 100%;
   height: 275px;
   display: block;
@@ -75,9 +75,29 @@ const Content = styled.div`
 `
 
 
+
 const WorksImg = styled.div`
-  width: 100%;
+  overflow: hidden;
+  background: url(${props => props.src});
+  background-size: cover;
+  width: 275px;
   height: 275px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  &:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: inherit;
+    filter: blur(4px);
+  }
+  &:hover {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.1875em);
+  }
 `
 
 const Text = styled.p`
@@ -85,10 +105,16 @@ const Text = styled.p`
   line-height: 28px;
   padding-top: 0;
   margin-bottom: 53px;
+  color:#000;
 `
 
 const TextBold = styled(Text)`
   font-weight: bold;
   margin-bottom: 10px;
   padding-top: 24px;
+  color: #000;
+`
+
+const Icon = styled(FontAwesomeIcon)`
+  color: #000;
 `
