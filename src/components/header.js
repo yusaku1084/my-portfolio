@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import heroImage from "../images/Rectangle.png"
-import thumb from "../images/thumb.svg"
+import thumb from "../images/thumb.png"
 
  const Headerbox = styled.header`
  background-image: url(${heroImage});
