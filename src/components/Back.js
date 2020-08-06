@@ -34,7 +34,7 @@ const Box = styled.div`
 `
 
 const Tx = styled.h3`
-font-size: 20px;
+font-size: 18px;
 line-height: 65px;
 color: #515151;
 margin-left: 23px;
