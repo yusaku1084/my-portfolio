@@ -34,7 +34,7 @@ const Box = styled.div`
 `
 
 const Tx = styled.h3`
-font-size: 18px;
+font-size: 20px;
 line-height: 65px;
 color: #515151;
 margin-left: 23px;
@@ -47,7 +47,7 @@ const BackWrraper = styled.a`
   display:flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  width: 185px;
+  width: 500px;
   color: transparent;
 
 `
