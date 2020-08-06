@@ -13,19 +13,26 @@ const CareerList01 = () => (
       <Block>
         <Border />      
         <TextDetail>
-          <TextBold>塾講師 | 2017.04 -<br />株式会社ユナイト</TextBold>
+          <TextBold>塾講師 | 2017.04 - 2020.04<br />株式会社ユナイト</TextBold>
           <Text>中高生の理数系の授業を担当。</Text>
         </TextDetail>
       </Block>
+      <Block>
+        <Border />
+        <TextDetail>
+          <TextBold2>配送業 | 2017.04 - 2019.12<br />株式会社DHA</TextBold2>
+          <Text>主に家電の配達設置を行う。</Text>
+        </TextDetail>
+      </Block>
       <TextDetail>
-        <TextBold2>配送業 | 2017.04 - 2019.12<br />株式会社DHA</TextBold2>
-        <Text>主に家電の配達設置を行う。</Text>
+        <TextBold2> テレマーケティング業 | 2020.03 - 2020.08<br />株式会社CRTM</TextBold2>
+        <Text>コールセンター業務。</Text>
       </TextDetail>
     </Content>
     <Content>
     <Icon icon={faAddressBook} color="#C4C4C4" /><ColumnTitle title="EDUCATION" />
       <TextDetail>
-        <TextBold>先端社会デザインコース | 2008.04 - 2012.03<br />立命館大学 情報理工学部</TextBold>
+        <TextBold>先端社会デザインコース | 2017.04 - 2021.03<br />立命館大学 情報理工学部</TextBold>
       </TextDetail>
     </Content>
   </List>
@@ -44,11 +51,12 @@ const CareerList02 = () => (
       <Block>
         <SkillText>HTML/CSS</SkillText>
         <Dots><GDot /><GDot /><GDot /><Dot /><Dot /></Dots>
+        <SkillComment>基本はマスター</SkillComment> 
       </Block>
       <Block>
         <SkillText>Python</SkillText>
         <Dots><GDot /><GDot /><Dot /><Dot /><Dot /></Dots>
-        <SkillComment>学校で主に使用</SkillComment>     
+        <SkillComment>学校で主に使用。研究などでもこの言語</SkillComment>     
       </Block>
       <SkillText2>Design</SkillText2>
       <Block>
