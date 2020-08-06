@@ -42,7 +42,7 @@ const CareerList02 = () => (
         <SkillComment>ReactJS,GatsbyJS,TypeScriptを勉強中</SkillComment>
       </Block>
       <Block>
-        <SkillText>HTML / CSS</SkillText>
+        <SkillText>HTML/CSS</SkillText>
         <Dots><GDot /><GDot /><GDot /><Dot /><Dot /></Dots>
       </Block>
       <Block>
